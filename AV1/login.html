@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login | Astra</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="forms.css">
+	<link rel="stylesheet" href="astra.css">
+</head>
+<body class="account-page">
+	<main class="account-shell">
+		<a class="brand" href="index.html">
+			<img src="logo.svg" alt="Nexa TI">
+			<span>NEXA <b>TI</b></span>
+		</a>
+
+		<section class="form-panel">
+			<p class="eyebrow">Área do cliente</p>
+			<h1>Login de clientes</h1>
+			<p>Acesse seus pedidos e encontre suporte para seguir em frente.</p>
+
+			<form id="login-form" novalidate>
+				<label for="login-email">
+					E-mail
+					<input id="login-email" type="email" autocomplete="email" placeholder="voce@empresa.com">
+				</label>
+				<label for="login-password">
+					Senha
+					<input id="login-password" type="password" autocomplete="current-password" placeholder="Sua senha">
+				</label>
+				<p id="form-message" class="form-message" role="alert"></p>
+				<button class="button full" type="submit">Realizar login <span>↗</span></button>
+				<button class="button button-ghost full" id="clear-login" type="button">Limpar</button>
+			</form>
+
+			<div class="form-links">
+				<a href="trocar-senha.html">Esqueci minha senha</a>
+				<a href="cadastro.html">Ainda não sou cliente</a>
+			</div>
+		</section>
+
+		<p class="account-note">Nexa TI · Tecnologia que aproxima</p>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
